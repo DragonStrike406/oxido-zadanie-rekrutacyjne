@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+	<meta name="author" content="Aleksander Wojewódzki">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie Rekrutacyjne</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <script>
+        fetch('content.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+            });
+    </script>
+</body>
+</html>
